@@ -1,0 +1,89 @@
+- Gorutine leak...
+
+	*** LOOP forever... sleep...
+	*** Aumentar (pool de conexiones ¿http? a bbdd)
+	
+	- Compilacion
+		- https://gitlab.vicky.tg.telefonica/devops/jenkins_pipelines/groovy_pipelines/blob/master/backend/businesslogic.groovy
+		
+		sh "GO111MODULE=on GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -ldflags='-w -s'"
+		
+		FROM nexus.vicky.tg.telefonica:9080/repository/docker-hosted/alpine:3.8-2
+		EXPOSE 3000
+		WORKDIR /go
+		USER vicky
+		ADD vicky-business-logic /go/vicky-business-logic
+		CMD ./vicky-business-logic
+		
+		$ go tool link
+		  -s    disable symbol table
+		  -w    disable DWARF generation
+		  
+	- Temas con Alpine
+		- https://www.digitalocean.com/community/tutorials/using-ldflags-to-set-version-information-for-go-applications-es
+		- https://github.com/blang/golang-alpine-docker/blob/master/Dockerfile
+		- https://github.com/lamb-mei/docker-golang-alpine-glibc-calibre/blob/master/Dockerfile
+		- https://alpinelinux.org/posts/Alpine-3.8.0-released.html
+		- https://github.com/golang/go/issues/30957
+		- https://stackoverflow.com/questions/57527537/precompiled-golang-on-alpine
+		- https://stackoverflow.com/questions/8509152/max-number-of-goroutines
+		* https://www.ardanlabs.com/blog/2014/01/concurrency-goroutines-and-gomaxprocs.html
+
+	- Informacion sobre "carga"
+		- https://unix.stackexchange.com/questions/116849/why-load-is-high-despite-the-fact-that-neither-cpu-or-disk-is-overused
+		- https://unix.stackexchange.com/questions/134381/very-high-cpu-load-but-nothing-significant-in-top
+		* Dashboard de grafana
+			- https://grafana.com/grafana/dashboards/12626
+
+	- Implementar un health (para que grafana pueda consultarlo)
+		- Grafana
+			- https://community.grafana.com/t/grafana-simplejson-dashboard/5627/6
+			- https://grafana.com/grafana/plugins/simpod-json-datasource
+			- https://github.com/grafana/simple-json-backend-datasource
+		- Backend (ejemplo)
+			- https://github.com/smcquay/jsonds
+		- Datos a mostrar
+			- LoadAverage
+				- https://github.com/mikoim/go-loadavg
+			- Cpu
+				- https://github.com/c9s/goprocinfo
+			- Gorutines abiertas
+				- ...
+			- Otros
+				- https://stackoverflow.com/questions/11356330/how-to-get-cpu-usage
+
+
+	- Opciones de analisis de go-leak-rutine: Sigo repasando las caidas por "io wait"...
+		- https://github.com/uber-go/goleak
+		
+		- Cancelling go-rutine
+			- https://chilts.org/cancelling-multiple-goroutes/
+			
+		- Concurrent
+			- https://www.linkedin.com/pulse/solved-golang-fatal-error-concurrent-map-writes-ashish-tiwari/?articleId=6624185370131169280
+			
+		- https://www.ardanlabs.com/blog/2018/11/goroutine-leaks-the-forgotten-sender.html
+		- https://stackoverflow.com/questions/58597199/go-goroutines-leaking
+		- https://sodocumentation.net/es/go/topic/7748/perfilado-usando-la-herramienta-go-pprof
+		- https://blog.min.io/debugging-go-routine-leaks/
+		- https://medium.com/@alenkacz/an-example-of-a-goroutine-leak-and-how-to-debug-one-a0697cf677a3
+
+		- Loops
+			* https://blog.sgmansfield.com/2016/06/how-to-block-forever-in-go/
+			- https://medium.com/@ashishstiwari/dont-simply-run-forever-loop-for-1594464040b1
+			- https://github.com/golang/go/issues/7190
+			- https://stackoverflow.com/questions/55858835/infinite-looping-with-vs-without-time-sleep
+			- https://github.com/moby/moby/issues/18414
+			
+		- https://vimleshs.github.io/blog/profiling-go-programs
+			- Otros test
+				- https://blog.jetbrains.com/go/2019/04/03/profiling-go-applications-and-tests/
+				
+		- https://www.carloscarrascal.com/blog/encontrar-procesos-que-causan-bloqueos-de-io-iowait
+	
+		- Otros
+			- https://github.com/docker-library/golang/blob/master/Dockerfile-alpine.template
+			- https://bitfieldconsulting.com/golang/docker-image
+			- https://github.com/moby/moby/issues/21485
+			- https://github.com/concourse/concourse/issues/1183
+			- https://github.com/gorilla/websocket/issues/598

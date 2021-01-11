@@ -1,0 +1,70 @@
+- Nuevas versiones
+	- 1.13 - 1.14
+		- Private repo
+			- https://golang.org/doc/go1.13#modules
+			- https://stackoverflow.com/questions/57885949/private-repo-go-1-13-go-mod-failed-ping-sum-golang-org-lookup-ver
+			- https://medium.com/mabar/today-i-learned-fix-go-get-private-repository-return-error-reading-sum-golang-org-lookup-93058a058dd8
+			
+			
+			
+	- Parseo de ficheros
+		- https://github.com/vjeantet/grok
+		- https://github.com/logrusorgru/grokky
+		- https://gowalker.org/github.com/syndtr/goleveldb/leveldb
+		- https://github.com/syndtr/goleveldb
+		- https://micronaut-projects.github.io/micronaut-kafka/latest/guide/#kafkaQuickStart
+		- https://blog.friendsofgo.tech/posts/empezando-con-apache-kafka-en-golang/
+		- https://github.com/Jeffail/benthos
+		- https://github.com/lovoo/goka
+		- https://github.com/segmentio/kafka-go
+		
+	- Wsdl
+		- https://github.com/fiorix/wsdl2go
+		- https://github.com/golang/go/issues/14407
+		- https://github.com/hooklift/gowsdl
+		- https://github.com/droyo/go-xml
+		- https://gowalker.org/aqwari.net/xml/xsdgen
+		
+	- Mas wsdl
+		- https://stackoverflow.com/questions/55337517/golang-xml-unmarshal-ignores-namespace
+			- Parsea cuando lo lleva, pero no lo devolvemos...
+				- https://play.golang.org/p/UppXwx0X0i9
+			* A parte de que la libreria "espera <soap..."
+		- "Mejor" enfoque uso de templates...
+			- https://levelup.gitconnected.com/golang-soap-based-services-ccc4b3e3ee2e
+		- Libreria que los "soporta"
+			- https://code.blinkace.com/go/xml/blob/master/encoding/xml/xml_test.go
+			* Falta ejemplo de marsal general.
+			
+		* Forks customizados
+			- https://github.com/sarbash/soap
+			- https://github.com/sb-akd/soap		
+		
+	- Casting - Xmls marshal
+		- https://stackoverflow.com/questions/50939497/golang-cast-interface-to-struct
+		- https://stackoverflow.com/questions/50852393/how-to-cast-interface-to-struct/50853144
+		
+		- https://stackoverflow.com/questions/45333364/golang-unmarshal-xml-attribute-into-interface
+		- https://carlosneirablog.wordpress.com/2017/05/12/golang-soap-request-xml-marshalling/
+		
+	- Interfaces
+		- https://medium.com/golangspec/interfaces-in-go-part-i-4ae53a97479c
+		- https://stackoverflow.com/questions/20314604/go-syntax-and-interface-as-parameter-to-function
+		- https://stackoverflow.com/questions/31362044/anonymous-interface-implementation-in-golang
+			*** https://play.golang.org/p/k8_X9g2NYc
+		- https://golangbot.com/first-class-functions/
+		- https://medium.com/statuscode/pipeline-patterns-in-go-a37bb3a7e61d
+		
+	- Web assembly
+		- https://marianogappa.github.io/software/2020/04/01/webassembly-tinygo-cheesse/?utm_medium=email&utm_source=topic+optin&utm_campaign=awareness&utm_content=20200411+prog+nl&mkt_tok=eyJpIjoiTldZM09ERmlOREl4WVRCayIsInQiOiI2NEVkQUNDSlZZZTZrM3JoUHltbWczV0trWWpxZnJoWXlheWFNRUZzQTZQWVMwcmdyZml1RzhQNUQ2U3Q5YlhpeUJWU05laktSc2FLQ0FVWmU3WVhRaXkyNlgxUDViSHRzVTlKSmJBREpjRW16S0oydGNJOGlhc2MyQ3Uwd1wvNHUifQ%3D%3D
+		- https://tinygo.org/
+		- https://github.com/tinygo-org/tinygo
+		
+		
+	- Json Streaming
+		- https://stackoverflow.com/questions/52070077/how-to-receive-http-response-for-streaming/52070667
+		- https://play.golang.org/p/zHXe-4a4Za
+		
+		- https://medium.com/learning-the-go-programming-language/streaming-io-in-go-d93507931185
+		- https://www.alexedwards.net/blog/how-to-properly-parse-a-json-request-body
+		- https://gist.github.com/aodin/9493190

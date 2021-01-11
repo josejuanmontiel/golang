@@ -1,0 +1,27 @@
+- Polymorphism with Golang Interfaces
+	- https://medium.com/technofunnel/polymorphism-with-golang-interfaces-b2f58a05b221
+- Polymorphism in Go - without interfaces
+	- https://www.sohamkamani.com/golang/2019-03-29-polymorphism-without-interfaces/
+	* https://play.golang.org/p/P5Ovn_K-yyo
+	
+- Polymorphism in GoLang
+	- https://golangdocs.com/polymorphism-in-golang
+	
+- Why can't I assign a *Struct to an *Interface?
+	- https://stackoverflow.com/questions/13511203/why-cant-i-assign-a-struct-to-an-interface
+	
+- Class and Object in Golang
+	- https://www.geeksforgeeks.org/class-and-object-in-golang/
+	* https://play.golang.org/p/rL12Lrpqsyu
+	
+- Part 27: Composition Instead of Inheritance - OOP in Go
+	- https://golangbot.com/inheritance/
+	
+* Reflection - TypeREgistry
+	- https://play.golang.org/p/s1agPjsl4n
+	
+* Reflection - CallMethod
+	- https://gist.github.com/tkrajina/880eb4b9a10aee28707e2aa764257503
+	
+- How to properly use .Call in reflect package
+	- https://stackoverflow.com/questions/20714939/how-to-properly-use-call-in-reflect-package
