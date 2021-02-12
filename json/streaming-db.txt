@@ -1,0 +1,7 @@
+- https://revs.runtime-revolution.com/streaming-data-in-postgres-43c502a6732
+- https://www.calhoun.io/querying-for-a-single-record-using-gos-database-sql-package/
+
+- https://blog.dbi-services.com/what-is-the-maximum-in-list-size-in-postgresql/
+- https://crate.io/a/sql-subquery-vs-left-join/
+- https://stackoverflow.com/questions/6328679/in-go-does-it-make-sense-to-write-non-blocking-code
+- https://www.calhoun.io/querying-for-a-single-record-using-gos-database-sql-package/	
