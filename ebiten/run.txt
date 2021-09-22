@@ -1,0 +1,45 @@
+jose@x230n:~/go/src/golang/ebiten$ go get .../.
+cannot find package "github.com/josejuanmontiel/golang/packaging/dep" in any of:
+	/usr/lib/go-1.15/src/github.com/josejuanmontiel/golang/packaging/dep (from $GOROOT)
+	/home/jose/go/src/github.com/josejuanmontiel/golang/packaging/dep (from $GOPATH)
+cannot find package "github.com/hashicorp/hcl/hcl/printer" in any of:
+	/usr/lib/go-1.15/src/github.com/hashicorp/hcl/hcl/printer (from $GOROOT)
+	/home/jose/go/src/github.com/hashicorp/hcl/hcl/printer (from $GOPATH)
+cannot find package "github.com/dgrijalva/jwt-go/v4" in any of:
+	/usr/lib/go-1.15/src/github.com/dgrijalva/jwt-go/v4 (from $GOROOT)
+	/home/jose/go/src/github.com/dgrijalva/jwt-go/v4 (from $GOPATH)
+cannot find package "github.com/influxdata/influxdb/client/v2" in any of:
+	/usr/lib/go-1.15/src/github.com/influxdata/influxdb/client/v2 (from $GOROOT)
+	/home/jose/go/src/github.com/influxdata/influxdb/client/v2 (from $GOPATH)
+cannot find package "github.com/tealeg/xlsx/v2" in any of:
+	/usr/lib/go-1.15/src/github.com/tealeg/xlsx/v2 (from $GOROOT)
+	/home/jose/go/src/github.com/tealeg/xlsx/v2 (from $GOPATH)
+package gorm.io/gorm/clause: unrecognized import path "gorm.io/gorm/clause": reading https://gorm.io/gorm/clause?go-get=1: 404 Not Found
+package gorm.io/gorm/logger: unrecognized import path "gorm.io/gorm/logger": reading https://gorm.io/gorm/logger?go-get=1: 404 Not Found
+package gorm.io/gorm/schema: unrecognized import path "gorm.io/gorm/schema": reading https://gorm.io/gorm/schema?go-get=1: 404 Not Found
+package gorm.io/gorm/callbacks: unrecognized import path "gorm.io/gorm/callbacks": reading https://gorm.io/gorm/callbacks?go-get=1: 404 Not Found
+package gorm.io/gorm/migrator: unrecognized import path "gorm.io/gorm/migrator": reading https://gorm.io/gorm/migrator?go-get=1: 404 Not Found
+cannot find package "github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric/protos/common" in any of:
+	/usr/lib/go-1.15/src/github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric/protos/common (from $GOROOT)
+	/home/jose/go/src/github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric/protos/common (from $GOPATH)
+cannot find package "github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric/protos/peer" in any of:
+	/usr/lib/go-1.15/src/github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric/protos/peer (from $GOROOT)
+	/home/jose/go/src/github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric/protos/peer (from $GOPATH)
+cannot find package "github.com/hyperledger/fabric/core/chaincode/shim" in any of:
+	/usr/lib/go-1.15/src/github.com/hyperledger/fabric/core/chaincode/shim (from $GOROOT)
+	/home/jose/go/src/github.com/hyperledger/fabric/core/chaincode/shim (from $GOPATH)
+cannot find package "github.com/hyperledger/fabric/protos/peer" in any of:
+	/usr/lib/go-1.15/src/github.com/hyperledger/fabric/protos/peer (from $GOROOT)
+	/home/jose/go/src/github.com/hyperledger/fabric/protos/peer (from $GOPATH)
+package gitlab.vicky.tg.telefonica/vicky/core/models/v2: unrecognized import path "gitlab.vicky.tg.telefonica/vicky/core/models/v2": https fetch: Get "https://gitlab.vicky.tg.telefonica/vicky/core/models/v2?go-get=1": x509: certificate signed by unknown authority
+package gitlab.vicky.tg.telefonica/vicky/core/models/v2/event: unrecognized import path "gitlab.vicky.tg.telefonica/vicky/core/models/v2/event": https fetch: Get "https://gitlab.vicky.tg.telefonica/vicky/core/models/v2/event?go-get=1": x509: certificate signed by unknown authority
+package gitlab.vicky.tg.telefonica/vicky/core/models/v2/tables: unrecognized import path "gitlab.vicky.tg.telefonica/vicky/core/models/v2/tables": https fetch: Get "https://gitlab.vicky.tg.telefonica/vicky/core/models/v2/tables?go-get=1": x509: certificate signed by unknown authority
+package gitlab.vicky.tg.telefonica/vicky/core/utils/error: unrecognized import path "gitlab.vicky.tg.telefonica/vicky/core/utils/error": https fetch: Get "https://gitlab.vicky.tg.telefonica/vicky/core/utils/error?go-get=1": x509: certificate signed by unknown authority
+package gitlab.vicky.tg.telefonica/vicky/core/utils/error/general: unrecognized import path "gitlab.vicky.tg.telefonica/vicky/core/utils/error/general": https fetch: Get "https://gitlab.vicky.tg.telefonica/vicky/core/utils/error/general?go-get=1": x509: certificate signed by unknown authority
+package gitlab.vicky.tg.telefonica/vicky/core/utils/logger: unrecognized import path "gitlab.vicky.tg.telefonica/vicky/core/utils/logger": https fetch: Get "https://gitlab.vicky.tg.telefonica/vicky/core/utils/logger?go-get=1": x509: certificate signed by unknown authority
+cannot find package "github.com/hyperledger/fabric/protos/ledger/queryresult" in any of:
+	/usr/lib/go-1.15/src/github.com/hyperledger/fabric/protos/ledger/queryresult (from $GOROOT)
+	/home/jose/go/src/github.com/hyperledger/fabric/protos/ledger/queryresult (from $GOPATH)
+cannot find package "github.com/golang/protobuf/proto/test_proto" in any of:
+	/usr/lib/go-1.15/src/github.com/golang/protobuf/proto/test_proto (from $GOROOT)
+	/home/jose/go/src/github.com/golang/protobuf/proto/test_proto (from $GOPATH)
